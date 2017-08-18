@@ -1,0 +1,263 @@
+/*
+ * Globals 全局样式
+ */
+ html{
+ 	color: #333;
+
+ 	display: block;
+ }
+ body{
+ 	font-size: 12px;
+ 	font-family: Arial,宋体;
+ 	background: url('../images/huise.jpg') repeat-x;
+ }
+ body,div,p,tr,td,img,form,button,input{
+ 	margin: 0;
+ 	padding: 0;
+ }
+ a:link,a:visited{
+ 	text-decoration: none;
+ 	color: #706C6C;
+ }
+ a:hover{
+ 	text-decoration: none;
+ 	color: #666;
+ }
+  .reg{width: 100%;}
+ /*
+	--头部样式--
+ */
+
+ .mod-head{ 
+ 	height: 100px;
+ }
+
+ .head{
+ 	width: 980px;
+ 	height: 100px;
+ 	margin: 0 auto; 
+ }
+
+ .logo{
+ 	display: block;
+ 	width: 400px;
+ 	height: 100px;
+ 	font-size: 24px;
+ 	line-height: 100px;
+ 	float: left;
+ }
+ .text{
+ 	display: block; 	
+ 	width: 200px;
+ 	height: 80px;
+ 	margin-left: 220px;
+ 	margin-top: -145px;
+ }
+ .login{
+ 	width: 400px;
+ 	height: 100px;
+ 	line-height: 100px;
+ 	float: right;
+ 	font-size: 18px;
+ }
+ .btn{
+ /*	font-size: 20px;
+ 	border-radius: 5px;
+ 	color: #666;
+ 	width: 80px;
+ 	height: 30px;
+ 	background-color: #eee;*/
+/* 	font-weight: 700;
+    color: #666;
+    height: 32px;
+    width: 64px;
+    border: 0; */
+    width: 80px;
+ 	height: 30px;
+ 	color: #666;
+ 	margin-top:30px ;
+ 	background-color: white;
+  	font: bold 16px/25px Arial, 宋体;
+	cursor: pointer;
+/*	text-shadow: 1px 1px 1px rgba(255,255,255, .22);*/
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+
+
+ }
+ .nav{
+ 	margin-top: 15px;
+ 	width: 100%;
+ 	height: 20px;
+ 	border-top: 1px solid #ccc;
+ }
+ /*
+	--注册内容--
+ */
+ .reg_content{
+ 	width: 980px;
+ 	height: 380px;
+ 	margin: 0 auto;
+ 	position: relative;
+ }
+ .reg_form{
+ 	/*position: relative;*/
+ 	float: left;
+ 	padding: 20px;
+ 	width: 600px;
+ }
+ .option{
+ 	width: 900px;
+ 	height: 50px;
+ 	font-size: 20px;
+ 	line-height: 50px;
+ 	margin-top: 20px;
+ 	text-align: center;
+
+ }
+ .inp{
+ 	margin-left: 30px;
+ 	width: 300px;
+ 	height: 35px; 
+ 	font-size: 14px;
+ 	padding-left: 8px;
+ }
+ .submit{
+ 	margin-left: 23px;
+ }
+ .ruidu{
+ 	position: relative;
+ 	font-size: 16px;
+ 	text-align: center;
+ 	margin-top: 20px;
+ 	margin-left: 200px;	
+ }
+/*
+	--错误与成功提示信息--
+*/
+.hint{
+	position: absolute;
+	display: none;
+	font-size: 12px;
+	left: 680px;
+	top: 50px;
+	width: 300px;
+	height: 30px;
+}
+.hint_tel{
+	position: absolute;
+	display: none;
+	font-size: 12px;
+	left: 680px;
+	top: 120px;
+	width: 300px;
+	height: 30px;
+}
+.hint_pwd{
+	position: absolute;
+	display: none;
+	font-size: 12px;
+	left: 680px;
+	top: 190px;
+	width: 300px;
+	height: 30px;
+
+}
+.zhushu{
+	color: red;
+	width: 180px;
+	height: 30px;
+	font-size: 16px;
+	line-height: 30px;
+	/*position: relative;*/
+
+}
+.img{
+	display: block;
+	position: absolute;
+	top: 7.5px;
+}
+/*
+	--单独给提示信息设置颜色--
+*/
+.tishi{
+	color: #666;
+}
+
+.sub_btn{
+	background-color: #4490f7;
+	width: 300px;
+ 	height: 35px; 
+ 	font-size: 16px;
+ 	cursor: pointer;
+ 	color: white; 
+}
+
+/*
+	--注册账号后登录表单样式
+
+*/
+.login_back{
+	width: 100%;	
+	height: 630px;
+	background-color: #7C7979;
+	position: absolute;
+	opacity:0.5;
+	z-index: 100;
+	display: none;
+}
+.login_main{
+	position: absolute;
+	margin-left:456px;
+	margin-top: 168px;
+	z-index: 200;
+	width: 550;
+	height: 300px;
+	display: none;
+	background: rgb(102, 102, 102);
+}
+.login_option{
+	width: 400px;
+	height: 50px;
+	font-size: 20px;
+	margin-top: 20px;
+	line-height: 50px;
+	color: white;
+}
+.login_inp{
+	width: 280px;
+	height: 30px;
+	font-size: 14px;
+	padding-left: 10px;
+	margin-left: 14px;
+}
+.login_btn{
+	width: 290px;
+	height: 30px;
+	margin-left: 82px;
+	font-size: 18px;
+	color: black;
+	/*background: #2e7fdb;*/
+	cursor: pointer;
+	border-radius: 2px;
+}
+/*
+	--注册成功后提示--
+*/
+.success{
+	color: blue;
+	position: absolute;	
+	left: 523px;
+	top: 254px;
+	display: none;
+}
+/*
+	--注册失败提示--
+*/
+.fail{
+	color: red;
+	left: 510px;
+}

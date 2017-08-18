@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Welcome to CB&PHP World</title>
+        <meta name="copyright" content="Copyright 2014 - L-Sky.Cn" />
+        <meta name="description" content="易行出租管理系统登陆页面" />        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    </head>
+<body>
+    <!-- 主题内容 -->
+    <div class="main">
+    <!-- 头部显示logo -->
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.png">               
+            </div>
+
+        </div>
+        <!-- 表单域主要内容 -->
+            <div class="content">
+                <div class="title hide">登录CB-PHP</div>
+                <form name="login" action="" method="post" id="form1">
+                    <fieldset>
+                        <div class="input">
+                            <input class="input_all name" name="admin_name" id="name" placeholder="用户名/手机号" type="text" />
+                            <p class="tishiUm">请您输入用户名</p>
+                        </div>
+                        <div class="input">
+                            <input class="input_all password" name="admin_password" id="password" type="password" placeholder="密码"  />
+                            <p class="tishiPwd">请您输入密码</p>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="remember" id="remember" />
+                            <label for="remember"><span>下次自动登录</span></label>
+                            <a href="#" class="matter">登录遇到问题</a>
+                        </div>
+                        <div class="errorMsg" id="errorMsg">
+                            
+                        </div>
+                        <div class="enter">
+                            <input class="button hide" name="submit" type="button" value="登录" id="btn" />
+                        </div>
+                        <a href="register.html" class="register">立即注册</a>
+                    </fieldset>
+                </form>
+         </div>
+         <!-- 尾部 -->
+         <div class="bottom">
+             <p class="copy">I have an affinity with PHP...Copyright is owned by CB.</p>
+         </div>
+    </div>
+        <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

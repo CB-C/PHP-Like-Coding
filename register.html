@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册页面</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+	<!--遮罩层实现登录表单显示  -->
+	<div id="login" class="login_back"></div>
+	<div id="login_form" class="login_main" style="width: 420px;">
+			<form method="post" action="" name="form2" id="form2">
+				<p class="login_option">
+					<label for="loginUm">用户名</label>
+					<input type="text" name="admin_name" id="loginUm"  placeholder="用户名/手机号" class="login_inp">
+				</p>
+				<p class="login_option">
+					<label for="loginPwd">密　码</label>
+					<input type="password" name="admin_password" id="loginPwd"  placeholder="密码" class="login_inp">
+				</p>
+				<p class="login_option">
+					<button class="login_btn" type="button" id="login_btn">登录</button>
+					<button class="login_btn" type="button" id="back">返回</button>
+				</p>
+			</form>
+	</div>	
+	<!-- 	注册页面主体	 -->
+	<div class="reg">
+	<!-- 	注册页面头部	-->
+		<div class="mod-head">
+			<div class="head">				
+				<a href="#" class="logo"><img src="images/timg_r1_c1.jpg"><span class="text">注册PHP登录账号</span></a>
+				
+				<div class="login">
+					<p>
+						已有账号，请&nbsp;<button class="btn" id="formBtn">登录</button>
+						&ensp;<button class="btn" id="backup" onclick="history.go(-1)">返回上页</button>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="nav">			
+		</div>	
+
+		<!-- 注册表单域主体 -->
+		<div class="reg_content">
+			<div class="reg_form">
+				<form method="post" action="login.php" name="form1" id="form1">
+					<p class="option"><label for="um">用户名</label><input type="text" name="username"  id="um" placeholder="请设置用户名" class="inp" value="">
+					<div class="hint" id="checkUm">
+						<p class="tishi">设置后不可以更改</p>
+						<p class="tishi">中英文均可，不得超过7个长度</p>
+					</div>
+
+					<p class="option"><label for="tel">手机号</label><input type="tel" name="tel" id="tel" placeholder="可用于登录和找回密码" class="inp"></p>
+					<div class="hint_tel" id="checkTel">
+						<p class="tishi">请输入中国大陆手机号</p>
+						<p class="tishi">支持号码归属地查询</p>
+					</div>
+					<p class="option"><label for="pwd">密　码</label><input type="password" name="pwd" id="pwd" placeholder="请设置密码" class="inp"></p>
+					<div class="hint_pwd" id="checkPwd">
+						<p class="tishi">长度为6~14个字符,支持数字,大小写</p>
+						<p class="tishi">不允许有空格</p>
+					</div>
+					<p class="ruidu"><input type="checkbox" name="checked" value="" id="checked">&nbsp;<label for="checked">阅读并接受...</label></p>
+					<p class="success">您已成功注册,稍后即可登录</p>
+					<p class=" success fail">您输入的内容有误,请重新填写</p>
+					<p class="option submit"><input type="button" name="" value="注册" class="sub_btn inp" id="btn"></p>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+<!-- 载入注册页面js文件 -->
+<script type="text/javascript" src="js/register.js"></script>
