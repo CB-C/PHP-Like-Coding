@@ -258,6 +258,9 @@
 	--注册失败提示--
 */
 .fail{
+	display: none;
 	color: red;
 	left: 510px;
+	top: 254px;
+	position: absolute;
 }

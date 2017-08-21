@@ -42,18 +42,33 @@
 		}else if( Number($('#um').val()) ){	
 			$('#checkUm').html('<p class="zhushu"><img src="images/false.png" class="img">&ensp;&ensp;不能全是数字组合</p>');
 			return false;
-		}else if( len>7 ){
-			$('#checkUm').html('<p class="zhushu"><img src="images/false.png" class="img">字符长度不能超过7个</p>');
+		}else if( len>14 ){
+			$('#checkUm').html('<p class="zhushu"><img src="images/false.png" class="img">&ensp;&ensp;字符长度不能超过14个</p>');
 			return false;
+		}else if( ckSpecial($('#um').val()) ){
+			$('#checkUm').html('<p class="zhushu"><img src="images/false.png" class="img">&ensp;&ensp;用户名不能含特殊符号</p>');
 		}else if( checkedUm($('#um').val()) == 1 ){
-			$('#checkUm').html('<p class="zhushu"><img src="images/false.png" class="img">该用户已经被注册</p>');
+			$('#checkUm').html('<p class="zhushu"><img src="images/false.png" class="img">&ensp;&ensp;该用户已经被注册</p>');
 			return false;
 		}else{
 			$('#checkUm').html('<p class="zhushu"><img src="images/true.png" class="img"></p>');
 			return true;
 		}
 	}
-
+/*
+	--判断是否有特殊符号--
+*/
+	function ckSpecial(values){
+		var arr = ['!','@','#','$','%','^','&','*','(',')'];
+		var len = arr.length;
+		for( var i=0; i<len; ++i){
+			for( var j=0; j<values.length; ++j){
+				if( values.charAt(j) == arr[i] ){
+					return true;
+				}
+			}
+		}
+	}
 	
 
 /*
@@ -157,16 +172,20 @@
 			$.post('register.php',$('#form1').serialize(),function(data){
 				if( data==1 ){
 					$('.success').css('display','block');
+					$('.fail').css('display','none');
 					$('#checkUm').css('display','none');
 					$('#checkTel').css('display','none');
 					$('#checkPwd').css('display','none');
+					refrush();
 				}
 			});
 		}else{
 			$('.fail').css('display','block');
 		}
 	});
-
+	function refrush(){
+		setTimeout("location.reload()",4000);
+	}
 
 
 

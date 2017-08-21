@@ -1,7 +1,7 @@
 /*
 	--登录界面验证--
-
 */
+
 window.onload = function(){
 	$(function(){
 	//alert( $('#form1').serialize() );
@@ -13,6 +13,7 @@ window.onload = function(){
 				$('.tishiUm').css('display','none');
 				$('.tishiPwd').css('display','block');
 			}else{
+				$('.tishiUm').css('display','none');
 				$('.tishiPwd').css('display','none');
 				//alert($('#name').val());
 				//alert($('#password').val());		
